@@ -32,3 +32,42 @@ java CalculadoraDias
 ```
 
 El programa pedirá primero la fecha inicial y después la fecha final, y mostrará el número de días entre ambas.
+
+## CalculadoraAvanzada.java
+
+Calculadora aritmética con menú interactivo por consola.
+
+El archivo [CalculadoraAvanzada.java](CalculadoraAvanzada.java) muestra un menú con las operaciones suma, resta, multiplicación, división, número al cuadrado, factorial, comprobación de número primo, comprobación de par o impar, y tabla de multiplicar. El usuario elige una opción escribiendo su número y el programa pide los datos necesarios, valida que sean números correctos y muestra el resultado. El menú se repite hasta que se elige la opción de salir (`0`).
+
+### Cómo ejecutarlo
+
+```bash
+javac CalculadoraAvanzada.java
+java CalculadoraAvanzada
+```
+
+## MensajePersonal.java
+
+Programa que construye un mensaje personalizado a partir de datos introducidos por el usuario.
+
+El archivo [MensajePersonal.java](MensajePersonal.java) pide por consola el nombre, la edad y el peso, validando que la edad y el peso sean números correctos, y muestra un mensaje que combina los tres datos.
+
+### Cómo ejecutarlo
+
+```bash
+javac MensajePersonal.java
+java MensajePersonal
+```
+
+## CalculadoraCumpleanos.java
+
+Programa que calcula la edad y el tiempo restante hasta el próximo cumpleaños.
+
+El archivo [CalculadoraCumpleanos.java](CalculadoraCumpleanos.java) pide por consola el nombre y la fecha de nacimiento en formato `DD/MM/AAAA` (por ejemplo `15/09/2000`), usando `LocalDate` y `DateTimeFormatter` de `java.time`. Si el formato introducido no es válido, vuelve a pedir la fecha hasta que sea correcto. Con la fecha actual del sistema, calcula la edad actual, los días que faltan para el próximo cumpleaños y la edad que se cumplirá. Si la fecha de nacimiento coincide con la fecha actual, muestra únicamente un mensaje de felicitación con la edad que se cumple ese día.
+
+### Cómo ejecutarlo
+
+```bash
+javac CalculadoraCumpleanos.java
+java CalculadoraCumpleanos
+```
