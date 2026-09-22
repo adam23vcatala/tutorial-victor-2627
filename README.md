@@ -71,3 +71,22 @@ El archivo [CalculadoraCumpleanos.java](CalculadoraCumpleanos.java) pide por con
 javac CalculadoraCumpleanos.java
 java CalculadoraCumpleanos
 ```
+
+## CalculadoraConversiones.java
+
+Calculadora de conversiones entre el sistema métrico y el imperial, con menú interactivo por consola.
+
+El archivo [CalculadoraConversiones.java](src/main/java/org/victorcm/tutorial2627/CalculadoraConversiones.java) muestra un menú con cinco categorías: longitud (mm, cm, m, km, pulgada, pie, yarda, milla, milla náutica), masa (mg, g, kg, tonelada, onza, libra, stone), volumen (ml, l, m³, onza líquida US, taza US, pinta US, galón US, galón imperial), velocidad (m/s, km/h, mph, nudo, pie/s) y temperatura (°C, °F, K). Tras elegir la categoría, el programa lista sus unidades y pide la unidad de origen, la unidad de destino y la cantidad a convertir.
+
+Cada categoría guarda sus unidades en un array de nombres y otro de factores respecto a una unidad base (el metro, el gramo, el litro o el metro por segundo), de modo que cualquier conversión se resuelve pasando la cantidad a esa unidad base y de ahí a la unidad de destino. La temperatura se trata aparte, porque sus escalas no son proporcionales: se convierte primero a grados Celsius y después a la unidad elegida. El programa valida que las entradas sean números y que el número de unidad esté dentro del rango, y el menú se repite hasta que se elige la opción de salir (`0`).
+
+Ejemplos de conversiones: 100 km = 62.137119 millas, 98.6 °F = 37 °C, 1 galón US = 3.785412 litros, 120 km/h = 74.564543 mph.
+
+### Cómo ejecutarlo
+
+```bash
+javac -d target/classes src/main/java/org/victorcm/tutorial2627/CalculadoraConversiones.java
+java -cp target/classes org.victorcm.tutorial2627.CalculadoraConversiones
+```
+
+Las cantidades se introducen con punto decimal (por ejemplo `98.6`), que es también el formato en el que se muestran los resultados.

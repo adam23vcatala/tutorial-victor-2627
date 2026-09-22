@@ -1,4 +1,4 @@
-package org.example;
+package org.victorcm.tutorial2627;
 
 public class HolaMundo {
     public static void main(String[] args) {

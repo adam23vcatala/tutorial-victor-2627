@@ -1,4 +1,4 @@
-package org.example;
+package org.victorcm.tutorial2627;
 
 import java.util.Scanner;
 
